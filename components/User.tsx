@@ -13,8 +13,7 @@ const User = ({ user }: UserTypeProps) => {
       href={`/user/${user.id}`}
       className="flex flex-col gap-4 border border-white h-[100px] cursor-pointer"
     >
-      <h1>{user.name}</h1>
-      <h2>{user.email}</h2>
+      <h1>User {user.name} has an email {user.email }</h1>
     </Link>
   );
 };
