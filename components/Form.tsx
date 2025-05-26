@@ -22,6 +22,7 @@ const Form = () => {
       <input
         type="text"
         placeholder="Name"
+        name="name"
         className="border p-2 rounded-xl"
         onChange={(e) =>
           setNewUser((prev) => ({ ...prev, name: e.target.value }))
@@ -30,6 +31,7 @@ const Form = () => {
       <input
         type="email"
         placeholder="Email"
+        name="email"
         className="border p-2 rounded-xl"
         onChange={(e) =>
           setNewUser((prev) => ({ ...prev, email: e.target.value }))
